@@ -1,0 +1,70 @@
+.page-wrapper {
+	font-family: Arial, Helvetica, sans-serif;
+	text-align: center;
+}
+
+h1 {
+	text-align: center;
+}
+
+.menu-callout {
+	box-sizing: border-box;
+	border: solid black 1px;
+	background-color: gray;
+	margin: 10px;
+	position: relative;
+	padding: 30px;
+	text-align: left;
+}
+
+.menu-callout h3 {
+	border: solid black 1px;
+	padding: 5px;
+	margin: 0px;
+	text-align: center;
+	position: absolute;
+	min-width: 100px;
+	top: 0;
+	right: 0;
+}
+
+#firstOption h3 {
+	background-color: red;
+}
+
+#secondOption h3 {
+	background-color: pink;
+}
+
+#thirdOption h3 {
+	background-color: yellow;
+}
+
+
+/* mobile view */
+@media (max-width: 767px) {
+	div {
+		width: 100%;
+	}
+}
+
+/* tablet view */
+@media (min-width: 768px) and (max-width: 991px) {
+	.menu-callout {
+		width: 47%;
+		display: inline-block;
+	}
+		
+	#thirdOption {
+		display: block;
+		width: auto;
+	}
+}
+
+/* desktop view */
+@media (min-width: 992px) {
+	div {
+		width: 31%;
+		float:left;
+	}
+}
